@@ -1,0 +1,10 @@
+.left-navigation {
+  position: absolute;
+  left: 0px;
+  top: 50px;
+  color: gold;
+}
+.home-span {
+  color: gold;
+  text-decoration: none;
+}

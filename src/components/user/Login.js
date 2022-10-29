@@ -22,11 +22,12 @@ const Login = () => {
         email: email,
         password: password,
       };
-      console.log(inputValue.email);
       const response = await loginUser(inputValue);
       const x = response.json();
       if (response.status !== 200) {
-        throw new Error(x.message);
+        alert(x.response);
+        console.log(x);
+        console.log(x.response);
       } else {
         navigate("/home");
       }
